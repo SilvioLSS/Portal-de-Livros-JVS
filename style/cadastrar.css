@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+NL+Guides&family=Rowdies:wght@300;400;700&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+}
+
+header {
+    background-image: url("../img/fundoHeader.jpg");
+    background-size: cover;     
+    background-position: center;
+    background-repeat: no-repeat;   
+    background-color: white;
+    color: black;
+    padding: 200px;
+    margin: 0; 
+    width: 100%; 
+}
+
+
+
+#titulo{
+    font-family: "Rowdies", serif;
+    text-align: center;
+    margin-top: -100px;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+#titulo span{
+    font-family: "Playwrite NL Guides", serif;
+    color: black;
+}
+
+.container{
+    width: 100%;
+    max-width: 100%;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+
+/*Barra de navegação*/
+
+.nav{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav li{
+    margin: 0 10px;
+    font-family: "Tomorrow", serif;
+}
+
+.nav li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: black; /* Altera a cor do texto */
+    padding: 10px 15px; /* Adiciona preenchimento nos links */
+    transition: color 0.3s; /* Adiciona transição suave para hover */
+}
+
+.nav li a:hover {
+    color: white; /* Cor diferente ao passar o mouse */
+    background-color: #9816d3;
+}
+
+#link_login{
+    text-decoration: none;
+}
+
+button{
+    margin: 0 10px; /* Espaçamento horizontal para os botões */
+    padding: 10px 15px;
+    background-color: #9816d3; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove borda */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Ícone de "mão" ao passar o mouse */
+    transition: background-color 0.1s;
+}
+
+button:hover {
+    background-color: #9816d3; /* Cor diferente ao passar o mouse */
+}
+
+#link_login{
+    text-decoration: none;
+}
+
+
+
+#telaLogin{
+    margin-top: 100px;
+    border: 5px solid #9816d3;
+    text-align: center;
+    width: 50%;
+    height: auto;
+    font-family: "Montserrat", serif;
+    padding: 100px;
+}
+
+#email{
+    margin: 10px;
+}
+
+#senha{
+    margin: 10px;
+}
+
+#logar{
+    margin: 5px;
+}
+
+#cadastrar{
+    margin: 5px;
+}
+
+.subtitulo{
+    font-family: "Rowdies", serif;
+}
+
+button{
+    background-color: white; /* Cor de fundo */
+    color: black; /* Cor do texto */
+    border: none; /* Remove borda */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Ícone de "mão" ao passar o mouse */
+    transition: background-color 0.1s;
+}
+
+button:hover {
+    background-color: #9816d3; 
+}
+
+button a{
+    color: #9816d3;
+}
+
+button a:hover{
+    color: #ffffff;
+
+}
+
+footer{
+    background-image: url("../img/fundoFooter.jpg");
+    background-size: cover;     
+    background-position: center;
+    background-repeat: no-repeat;   
+    background-color: white;
+    color: black;
+    padding: 200px;
+    margin: 0px;
+    height:500px ;
+}
+
+#tituloFooter{
+    font-family: "Rowdies", serif;
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+#tituloFooter span{
+    font-family: "Playwrite NL Guides", serif;
+    color: black;
+}
+
+.navFooter{
+    list-style: none;
+}
+
+.navFooter a{
+    text-decoration: none;
+    color: black;
+    transition: .2s;
+}
+
+.navFooter a:hover{
+    color: white;
+    background-color: #9816d3;
+}
+
+
+
