@@ -1,0 +1,58 @@
+ /*menu::
+
+ /* Estilo para o menu sanduíche */
+ .menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.submenu {
+    display: none;
+    list-style: none;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+}
+
+.submenu li {
+    margin-bottom: 0.5rem;
+}
+
+.nav li:hover .submenu {
+    display: block;
+}
+
+/* menu sanduíche */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav li {
+        padding: 0.5rem 0;
+    }
+}
