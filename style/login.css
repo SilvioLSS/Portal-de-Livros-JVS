@@ -7,23 +7,30 @@
 }
 
 html, body {
-    width: 100%;
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
 }
 
-header{
+/*Corrigi o erro que deixava o texto não centralizado.*/
+header {
     background-image: url("../img/fundoHeader.jpg");
     background-size: cover;     
     background-position: center;
     background-repeat: no-repeat;   
     background-color: white;
     color: black;
-    padding: 200px;
-    margin: 0px;
+    padding: 150px;
+    margin: 0; 
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #titulo{
     font-family: "Rowdies", serif;
-    text-align: center;
     margin-top: -100px;
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
@@ -48,6 +55,9 @@ header{
     }
 }
 
+
+/*Barra de navegação*/
+
 .nav{
     display: flex;
     list-style: none;
@@ -64,7 +74,7 @@ header{
 
 .nav li a {
     text-decoration: none; 
-    color: black; 
+    color: black;
     padding: 10px 15px; 
     transition: color 0.3s; 
 }
@@ -85,12 +95,12 @@ button{
     color: white;
     border: none; 
     border-radius: 5px; 
-    cursor: pointer;
+    cursor: pointer; 
     transition: background-color 0.1s;
 }
 
 button:hover {
-    background-color: #9816d3;
+    background-color: #9816d3; 
 }
 
 

@@ -12,6 +12,7 @@ html, body {
     width: 100%; 
 }
 
+/*Corrigi o erro que deixava o texto não centralizado.*/
 header {
     background-image: url("../img/fundoHeader.jpg");
     background-size: cover;     
@@ -19,16 +20,17 @@ header {
     background-repeat: no-repeat;   
     background-color: white;
     color: black;
-    padding: 200px;
+    padding: 150px;
     margin: 0; 
     width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-
-
 
 #titulo{
     font-family: "Rowdies", serif;
-    text-align: center;
     margin-top: -100px;
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
@@ -71,14 +73,14 @@ header {
 }
 
 .nav li a {
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: black; /* Altera a cor do texto */
-    padding: 10px 15px; /* Adiciona preenchimento nos links */
-    transition: color 0.3s; /* Adiciona transição suave para hover */
+    text-decoration: none; 
+    color: black;
+    padding: 10px 15px; 
+    transition: color 0.3s; 
 }
 
 .nav li a:hover {
-    color: white; /* Cor diferente ao passar o mouse */
+    color: white; 
     background-color: #9816d3;
 }
 
@@ -87,18 +89,18 @@ header {
 }
 
 button{
-    margin: 0 10px; /* Espaçamento horizontal para os botões */
+    margin: 0 10px; 
     padding: 10px 15px;
-    background-color: #9816d3; /* Cor de fundo */
-    color: white; /* Cor do texto */
-    border: none; /* Remove borda */
-    border-radius: 5px; /* Cantos arredondados */
-    cursor: pointer; /* Ícone de "mão" ao passar o mouse */
+    background-color: #9816d3; 
+    color: white;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
     transition: background-color 0.1s;
 }
 
 button:hover {
-    background-color: #9816d3; /* Cor diferente ao passar o mouse */
+    background-color: #9816d3; 
 }
 
 #link_login{
